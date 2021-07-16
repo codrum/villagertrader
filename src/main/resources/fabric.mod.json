@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "villager-trader-addon",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for the Meteor Addon API.",
+  "name": "Villager Trader",
+  "description": "Villager Trader addon for the Meteor Addon API.",
   "authors": [
-    "seasnail8169"
+    "Fargendo"
   ],
   "contact": {
-    "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
+    "repo": "https://github.com/fargendo/villagertrader"
   },
   "icon": "assets/template/icon.png",
   "environment": "client",

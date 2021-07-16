@@ -1,8 +1,14 @@
 {
   "required": true,
-  "package": "meteordevelopment.addons.template.mixins",
+  "package": "meteordevelopment.addons.template.mixin",
   "compatibilityLevel": "JAVA_16",
-  "client": [],
+  "client": [
+    "BetterGuiMerchantAccessor",
+    "GenericContainerScreenMixin",
+    "GuiMerchantMixin",
+    "MerchantScreenAccessor",
+    "MerchantScreenMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }

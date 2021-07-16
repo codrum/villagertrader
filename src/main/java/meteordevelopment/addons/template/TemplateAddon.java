@@ -1,14 +1,10 @@
 package meteordevelopment.addons.template;
 
-import meteordevelopment.addons.template.commands.*;
-import meteordevelopment.addons.template.modules.*;
-import meteordevelopment.addons.template.modules.hud.*;
+import meteordevelopment.addons.template.modules.villager_trader.VillagerTrader;
 import meteordevelopment.meteorclient.MeteorAddon;
 import meteordevelopment.meteorclient.MeteorClient;
-import meteordevelopment.meteorclient.systems.commands.Commands;
 import meteordevelopment.meteorclient.systems.modules.Category;
 import meteordevelopment.meteorclient.systems.modules.Modules;
-import meteordevelopment.meteorclient.systems.modules.render.hud.HUD;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -26,15 +22,11 @@ public class TemplateAddon extends MeteorAddon {
 		MeteorClient.EVENT_BUS.registerLambdaFactory("meteordevelopment.addons.template", (lookupInMethod, klass) -> (MethodHandles.Lookup) lookupInMethod.invoke(null, klass, MethodHandles.lookup()));
 
 		// Modules
-		Modules.get().add(new Example());
-		Modules.get().add(new AnotherExample());
+		Modules.get().add(new VillagerTrader());
 
 		// Commands
-		Commands.get().add(new ExampleCommand());
+		//Commands.get().add(new ExampleCommand());
 
-		// HUD
-		HUD hud = Modules.get().get(HUD.class);
-		hud.elements.add(new HudExample(hud));
 	}
 
 	@Override
